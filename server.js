@@ -7,8 +7,8 @@ const https = require('https')
 const fse = require('fs-extra')
 
 const secureServer = https.createServer({
-    key: fse.readFileSync("/home/jgoolsby/SSR/portfolio/ssl/privkey.pem"),
-    cert: fse.readFileSync("/home/jgoolsby/SSR/portfolio/ssl/fullchain.pem")
+    key: fse.readFileSync("/var/www/portfolio/ssl/privkey.pem"),
+    cert: fse.readFileSync("/var/www/portfolio/ssl/fullchain.pem")
 }, app)
 
 const io = require('socket.io')(secureServer);
