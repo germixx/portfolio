@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Jeremy Goolsby",
-  description: "Jeremy Goolsby is an IT Specialist in located in Jacksonville, Florida.",
+  description: "Jeremy Goolsby is an IT Specialist in located in Florida.",
 };
 
 export default function RootLayout({ children }) {
